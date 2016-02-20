@@ -11,6 +11,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     TextView tv;
+    MyDB acerosDB;
+
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -18,13 +20,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.content_main);
 
         tv = (TextView)findViewById(R.id.tv);
-        String Data = "";
 
-        MyDB acerosDB = new MyDB(getBaseContext());
+        acerosDB = new MyDB(getBaseContext());
+        //borrarTabla();
+        leerTabla();
+    }
 
+    private void borrarTabla() {
+        Context cnt = this.getBaseContext();
+        cnt.deleteDatabase("acerosDB");
+    }
+
+    private void leerTabla() {
         try {
+            String Data = "";
 
-            /*retrieve data from database */
+            //retrieve data from database
             Cursor c = acerosDB.selectRecords();
 
             int Column1 = c.getColumnIndex("Field1");
@@ -44,10 +55,10 @@ public class MainActivity extends AppCompatActivity {
         }
         catch(Exception e) {
             Log.e("Error", "Error", e);
-        } /*finally {
-            if (acerosDB != null)
-                acerosDB.close();
-        }*/
+        } finally {
+           /* if (acerosDB != null)
+                acerosDB.close();*/
+        }
     }
 }
 

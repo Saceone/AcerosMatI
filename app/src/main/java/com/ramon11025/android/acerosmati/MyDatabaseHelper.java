@@ -28,6 +28,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         database.execSQL(DATABASE_CREATE);
         database.execSQL("INSERT INTO " + DATABASE_NAME + " (Field1, Field2)" + " VALUES ('POLEASA', 666);");
         database.execSQL("INSERT INTO " + DATABASE_NAME + " (Field1, Field2)" + " VALUES ('DEMIGRANTE', 333);");
+        database.execSQL("INSERT INTO " + DATABASE_NAME + " (Field1, Field2)" + " VALUES ('This is Pole', 0000)");
     }
 
     // Method is called during an upgrade of the database,
