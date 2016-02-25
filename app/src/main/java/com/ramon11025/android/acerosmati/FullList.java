@@ -64,7 +64,6 @@ public class FullList extends AppCompatActivity {
             if (mCursor != null) {
                 // Loop through all Results
                 do {
-                    int id = mCursor.getInt(_id);
                     String name = mCursor.getString(nombre);
                         if(name!=null) Data=Data.concat(name+"\n");
                     String tipo = mCursor.getString(type);
@@ -80,8 +79,16 @@ public class FullList extends AppCompatActivity {
                         if(s!=null) Data=Data.concat(", %S "+s);
                     String n = mCursor.getString(intN);
                         if(n!=null) Data=Data.concat(", %N "+n);
+                    int id = mCursor.getInt(_id);
                     String ni = mCursor.getString(intNi);
-                        if(ni!=null) Data=Data.concat(", %Ni "+ni);
+                        if(ni!=null){
+                            if(id==360001){
+                                Data=Data.concat("%Ni "+ni);
+                            }
+                            else{
+                                Data=Data.concat(", %Ni "+ni);
+                            }
+                        }
                     String mo = mCursor.getString(intMo);
                         if(mo!=null) Data=Data.concat(", %Mo "+mo);
                     String cr = mCursor.getString(intCr);
@@ -103,7 +110,7 @@ public class FullList extends AppCompatActivity {
                     Data =Data.concat("\n\n");
                 }while(mCursor.moveToNext());
             }
-            tv.setText(Data);
+            tv.setText(Data+"\n");
         }
         catch(Exception e) {
             Log.e("Error", "Error", e);

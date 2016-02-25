@@ -398,25 +398,25 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         database.execSQL("INSERT INTO " + DATABASE_NAME + " (_id, nombre, tipo, c, mn, si, ni, mo, cr)" +
                 " VALUES (207003, 'Acero de herramientas para trabajo en caliente aleados para trabajo de choque ', 'libro', '0.55', '0.5', '0.25', '1.3', '0.2', '0.75');");
 
-        database.execSQL("INSERT INTO " + DATABASE_NAME + " (_id, nombre, tipo, c, mn, si, cr, v)" +
+        database.execSQL("INSERT INTO " + DATABASE_NAME + " (_id, nombre, tipo, c, mn, si, cr, w)" +
                 " VALUES (207004, 'Acero de herramientas para trabajo en caliente aleados para trabajo de choque ', 'libro', '0.32', '0.3', '1', '1', '4');");
 
-        database.execSQL("INSERT INTO " + DATABASE_NAME + " (_id, nombre, tipo, c, mn, si, cr, v)" +
+        database.execSQL("INSERT INTO " + DATABASE_NAME + " (_id, nombre, tipo, c, mn, si, cr, w)" +
                 " VALUES (207005, 'Acero de herramientas para trabajo en caliente aleados para trabajo de choque ', 'libro', '0.42', '0.3', '1', '1.25', '2');");
 
-        database.execSQL("INSERT INTO " + DATABASE_NAME + " (_id, nombre, tipo, c, mn, si, cr, v)" +
+        database.execSQL("INSERT INTO " + DATABASE_NAME + " (_id, nombre, tipo, c, mn, si, cr, w)" +
                 " VALUES (207006, 'Acero de herramientas para trabajo en caliente aleados para trabajo de choque ', 'libro', '0.55', '0.3', '1', '1.25', '2');");
 
-        database.execSQL("INSERT INTO " + DATABASE_NAME + " (_id, nombre, tipo, c, mn, si, cr, v)" +
+        database.execSQL("INSERT INTO " + DATABASE_NAME + " (_id, nombre, tipo, c, mn, si, cr, w)" +
                 " VALUES (207007, 'Acero de herramientas para trabajo en caliente aleados para trabajo de choque ', 'libro', '0.4', '0.3', '1', '5', '5');");
 
-        database.execSQL("INSERT INTO " + DATABASE_NAME + " (_id, nombre, tipo, c, mn, si, cr, v)" +
+        database.execSQL("INSERT INTO " + DATABASE_NAME + " (_id, nombre, tipo, c, mn, si, cr, w)" +
                 " VALUES (207008, 'Acero de herramientas para trabajo en caliente aleados para trabajo de choque ', 'libro', '0.3', '0.25', '0.25', '3', '9.5');");
 
-        database.execSQL("INSERT INTO " + DATABASE_NAME + " (_id, nombre, tipo, c, mn, si, cr, v)" +
+        database.execSQL("INSERT INTO " + DATABASE_NAME + " (_id, nombre, tipo, c, mn, si, cr, w)" +
                 " VALUES (207009, 'Acero de herramientas para trabajo en caliente aleados para trabajo de choque ', 'libro', '0.35', '0.25', '0.25', '3', '11');");
 
-        database.execSQL("INSERT INTO " + DATABASE_NAME + " (_id, nombre, tipo, c, mn, si, cr, v)" +
+        database.execSQL("INSERT INTO " + DATABASE_NAME + " (_id, nombre, tipo, c, mn, si, cr, w)" +
                 " VALUES (207010, 'Acero de herramientas para trabajo en caliente aleados para trabajo de choque ', 'libro', '0.45', '0.25', '0.25', '3', '15');");
 
         database.execSQL("INSERT INTO " + DATABASE_NAME + " (_id, nombre, tipo, c, mn, si, mo, cr)" +

@@ -21,6 +21,10 @@
             android:name=".FullList"
             android:label="Aceros del libro">
         </activity>
+        <activity
+            android:name=".RandomSteel"
+            android:label="Generador de Aceros">
+        </activity>
     </application>
 
 </manifest>
